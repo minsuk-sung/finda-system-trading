@@ -19,7 +19,29 @@
 |---|---|:---:|
 |2020.11.14|자기 소개 및 대신증권API 개발환경 구축|2H|
 |2020.11.21|대신증권 API를 활용하여 차트 데이터 조회|2H|
-|2020.11.28||2H|
+|2020.11.28|종목 현재가 조회 API 활용하기|2H|
+|2020.12.05|대신증권 API를 활용하여 자동 로그인 및 매수/매도 주문 활용하기|2H|
+
+## Introduction
+> 들어가기 전에 아래와 같이 `config.ini` 파일을 꼭 만들어주시기 바랍니다.
+```
+; config.ini
+[DEFAULT]
+ID = 대신증권 아이디
+PWD = 대신증권 비밀번호
+PWD_CERT = 공인인증서 비밀번호
+
+[FBA]
+SLACK_TOKEN = 슬랙용 토큰
+```
+
+아래의 명령어를 통해서 사용하실 수 있습니다.
+```bash
+python pytrade.py
+```
+
+## Disclaimer
+> **주의: 아직 개발 상태이므로 프로그램이 완전하지 않습니다. 주의하여 사용하시길 바랍니다.**
 
 ## Reference
 |책|GitHub|YouTube|카페|
@@ -31,7 +53,6 @@
 |[파이썬 증권 데이터 분석 : 파이썬 입문, 웹 스크레이핑, 트레이딩 전략, 자동 매매 딥러닝을 이용한 주가 예측까지](http://www.kyobobook.co.kr/product/detailViewKor.laf?ejkGb=KOR&mallGb=KOR&barcode=9791162243206&orderClick=LAG&Kc=)(한빛미디어)|[INVESTAR](https://github.com/INVESTAR/StockAnalysisInPython)|-|-|
 
 ## License
-
 <img align="right" src="http://opensource.org/trademarks/opensource/OSI-Approved-License-100x137.png">
 
 The class is licensed under the [MIT License](http://opensource.org/licenses/MIT):
